@@ -12,3 +12,11 @@ console.log(vocals('santana'));
 //5. 
 import { allVocals } from "./module.js";
 console.log(allVocals('paco'));
+//6.
+import { countDown } from "./module.js";
+console.log(countDown(15));
+//7.
+
+//8.
+import { major } from "./module.js";
+console.log(major(12));
