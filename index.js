@@ -20,3 +20,6 @@ console.log(countDown(15));
 //8.
 import { major } from "./module.js";
 console.log(major(12));
+//9.
+import { random } from "./module.js";
+console.log(random());

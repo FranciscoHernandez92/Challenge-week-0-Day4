@@ -39,3 +39,12 @@ export const major = (o) => {
     return 'you can go to the jail'
   }return 'you are a teenager'
 }
+//9.
+export const random = () => {
+  const n = Math.random()
+  const result = Math.trunc(n * 7)
+  return result   
+}
+for (let i = 0; i < 7; i++) {
+  random()
+}
