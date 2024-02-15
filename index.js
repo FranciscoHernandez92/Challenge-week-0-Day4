@@ -7,3 +7,8 @@ console.log(palin('paco'));
 //3.
 import { vocals } from "./module.js";
 console.log(vocals('santana'));
+//4
+
+//5. 
+import { allVocals } from "./module.js";
+console.log(allVocals('paco'));

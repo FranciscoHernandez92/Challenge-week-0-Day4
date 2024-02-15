@@ -17,4 +17,9 @@ export const vocals = (w) => {
    }
   } return sum 
 } 
+//4.
 
+//5.
+export const allVocals = (v) => {
+  return v.includes('a' && 'e' && 'i' && 'o' && 'u') 
+}
