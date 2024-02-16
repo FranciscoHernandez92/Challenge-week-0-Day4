@@ -85,19 +85,39 @@ export const random = () => {
 for (let i = 0; i < 7; i++) {
   random()
 }
+//Otra forma
+export const rollDie = () => {
+  return Math.floor(Math.random() * 6) + 1
+}
 //10.
 
 //11.
 export const game = (play) =>{
-  const myOptions = ['piedra', 'papel', 'tijera']
+  const myOptions = ['rock', 'paper', 'scissor']
   const computerOption = myOptions[Math.floor(Math.random() * myOptions.length)]
-  if((play === 'piedra'  && computerOption === 'tijera') || 
-     (play === 'papel' && computerOption === 'piedra')  ||
-     (play === 'tijera' && computerOption === 'papel')){
+  if((play === 'rock'  && computerOption === 'scissor') || 
+     (play === 'paper' && computerOption === 'rock')  ||
+     (play === 'scissor' && computerOption === 'paper')){
     return `${play} v ${computerOption} you win` 
   } else if (play === computerOption){
     return `${play} v ${computerOption} its a tie`
   }
   return `${play} v ${computerOption} sorry, try again`
+}
+
+//12.
+export const randomName = (a, b) => {
+  const randomUserName = a[Math.floor(Math.random() * a.length)]
+  const randomLastName = b[Math.floor(Math.random() * b.length)]
+ return `Me llamo ${randomUserName} y mi apellido es ${randomLastName}`
+}
+//13.
+export const calculateTips = (bill, percentage) =>{
+  const tip = (bill * percentage) / 100
+  const totalToPay = bill + tip
+  return {total: bill.toFixed(2), //.toFixed  limita la cantidad de decimales que indiques en el parentesis
+    tip: tip.toFixed(2),
+    totalToPay: totalToPay.toFixed(2)
+  }
 }
 

@@ -13,7 +13,7 @@ console.log(vocals('santana'));
 console.log(vocals('cartel'));
 //4
 import { isPangram } from "./module.js";
-console.log(isPangram('La vuelta al mundo en 80 dias'))
+console.log(isPangram('La vuelta al mundo en ochenta dias'))
 console.log(isPangram('Un jugoso zumo de piña y kiwi bien frío es exquisito y no lleva alcohol.'));
 //5. 
 import { allVocals } from "./module.js";
@@ -37,12 +37,21 @@ console.log(isAdult('2010-12-31'));
 //9.
 import { random } from "./module.js";
 console.log(random());
-console.log(random());
+import { rollDie } from "./module.js";
+console.log(rollDie());
 //10.
 
 //11.
 import { game } from "./module.js";
-console.log(game('papel'));
-console.log(game('piedra'));
-console.log(game('tijera'));
-
+console.log(game('paper'));
+console.log(game('rock'));
+console.log(game('scissor'));
+//12
+import { randomName } from "./module.js";
+console.log(randomName(['fran', 'danielle', 'antonio', 'diego', 'marcos'], ['sanchez', 'hernandez', 'lopez', 'perez', 'ramirez']));
+console.log(randomName(['fran', 'danielle', 'antonio', 'diego', 'marcos'],['sanchez', 'hernandez', 'lopez', 'perez', 'ramirez']));
+//13
+import { calculateTips } from "./module.js";
+console.log(calculateTips(2000, 10));
+console.log(calculateTips(180,7));
+//14
